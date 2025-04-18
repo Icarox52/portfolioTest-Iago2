@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos - Robson Machado</title>
+  <link rel="stylesheet" href="robson.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+    }
+    .nav {
+      display: flex;
+      justify-content: center;
+      background: white;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: #556B2F;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .projetos-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    .projeto {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+    .projeto img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid #556B2F;
+    }
+    .projeto-conteudo {
+      text-align: left;
+    }
+    .projeto h3 {
+      color: #556B2F;
+      margin: 0 0 0.5rem;
+    }
+
+    .main {
+    animation: slideIn 2s forwards;
+    transform: translateX(-100vw);
+  }
+  @keyframes slideIn {
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="robson.html">Início</a>
+    <a href="curriculo.html">Meu Currículo</a>
+    <a href="projetos.html">Meus Projetos</a>
+  </nav>
+
+  <div class="container">
+    <h1>Meus Projetos</h1>
+    <div class="projetos-grid">
+      
+      <div class="projeto">
+        <img src="imagens/casa-terrea.jpg" alt="Projeto de Casa Térrea">
+        <div class="projeto-conteudo">
+          <h3>Projeto de Casa Térrea</h3>
+          <p>Planta baixa e modelagem 3D completa de uma residência com 2 quartos e garagem.</p>
+        </div>
+      </div>
+
+      <div class="projeto">
+        <img src="imagens/hidrossanitario.jpg" alt="Projeto Hidrossanitário">
+        <div class="projeto-conteudo">
+          <h3>Projeto Hidrossanitário</h3>
+          <p>Desenvolvimento de projeto hidráulico e sanitário com dimensionamento e detalhes técnicos.</p>
+        </div>
+      </div>
+
+      <div class="projeto">
+        <img src="imagens/levantamento-cad.jpg" alt="Levantamento CAD">
+        <div class="projeto-conteudo">
+          <h3>Levantamento CAD de Reforma</h3>
+          <p>Criação de projeto técnico com base em levantamento arquitetônico de uma edificação antiga.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
